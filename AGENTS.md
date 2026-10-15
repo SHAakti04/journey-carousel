@@ -8,3 +8,8 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Application conventions
+- Keep Journey content and pure loop geometry in `src/components/journey`, separate from its presentation, so animation rules can be tested without rendering.
+- The Journey uses a measured, triplicated track driven by one animation-frame loop; pause and visibility changes retain its position to prevent resets.
+- Define Journey visual styling in the global semantic design system so cards and responsive layouts share stable geometry.
