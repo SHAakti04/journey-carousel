@@ -237,3 +237,29 @@ body { margin: 0; font-family: var(--font-body); letter-spacing: 0; }
   .journey-card h2 { font-size: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { .journey-card { transition: none; } }
+/* Compact card rhythm keeps even the longest chapter completely visible. */
+.journey-card-header { min-height: 76px; padding-top: 12px; padding-bottom: 12px; }
+.chapter-number { font-size: 54px; }
+.journey-card-content { padding-top: 16px; padding-bottom: 16px; }
+.chapter-title-line { margin-bottom: 8px; }
+.chapter-icon svg { width: 18px; height: 18px; }
+.journey-card h2 { font-size: 21px; line-height: 1.25; margin-bottom: 10px; }
+.chapter-description { font-size: 11px; line-height: 1.65; }
+.chapter-bottom { padding-top: 10px; gap: 8px; }
+@media (max-width: 768px) {
+  .journey-heading h1 { font-size: 26px; }
+  .journey-card h2 { font-size: 20px; }
+  .chapter-description { font-size: 10.5px; line-height: 1.65; }
+}
+@media (max-height: 740px) and (max-width: 768px) {
+  .journey-heading { padding: 15px 18px; }
+  .journey-heading h1 { font-size: 23px; margin: 9px 0; }
+  .journey-heading > p { font-size: 10px; }
+  .journey-topline { height: 44px; }
+  .journey-stages { padding: 12px 0; }
+  .journey-playback { padding-bottom: 10px; }
+  .journey-card h2 { font-size: 18px; }
+  .journey-card-content { padding: 12px 18px; }
+  .chapter-description { font-size: 10px; }
+  .journey-card-header { min-height: 65px; }
+}

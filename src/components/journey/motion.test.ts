@@ -5,7 +5,7 @@ import { centeredChapter, INITIAL_PAUSE_MS, loopPosition } from "./motion";
 describe("Journey carousel requirements", () => {
   it("begins with Chapter 01 centered", () => {
     expect(centeredChapter(0, 384, 8)).toBe(0);
-    expect(journeyCarouselItems[0].chapter).toBe("Chapter 01");
+    expect(journeyCarouselItems[0]?.chapter).toBe("Chapter 01");
   });
   it("moves through chapters 01 to 08 in order", () => {
     expect(journeyCarouselItems.map((chapter) => chapter.chapter)).toEqual([

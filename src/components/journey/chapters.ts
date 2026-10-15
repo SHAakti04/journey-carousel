@@ -106,9 +106,9 @@ export const journeyCarouselItems: MilestoneContent[] = milestones
       body: item.body,
       tags: item.tags,
       icon: item.icon,
-      href: item.href,
-      linkLabel: item.linkLabel,
-      status: item.status,
+      ...(item.href ? { href: item.href } : {}),
+      ...(item.linkLabel ? { linkLabel: item.linkLabel } : {}),
+      ...(item.status ? { status: item.status } : {}),
     };
 
     return item.alternate ? [currentItem, item.alternate] : [currentItem];

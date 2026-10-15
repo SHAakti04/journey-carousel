@@ -53,7 +53,7 @@ export function Journey() {
     const resize = new ResizeObserver(measure);
     resize.observe(section);
     const observer = new IntersectionObserver(([entry]) => {
-      inView = entry.isIntersecting;
+      inView = entry?.isIntersecting ?? false;
     }, { threshold: 0.16 });
     observer.observe(section);
     const animate = (time: number) => {
