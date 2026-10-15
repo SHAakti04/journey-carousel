@@ -10,6 +10,6 @@
 <!-- LOVABLE:END -->
 
 ## Application conventions
-- Keep Journey content and pure loop geometry in `src/components/journey`, separate from its presentation, so animation rules can be tested without rendering.
-- The Journey uses a measured, triplicated track driven by one animation-frame loop; pause and visibility changes retain its position to prevent resets.
-- Define Journey visual styling in the global semantic design system so cards and responsive layouts share stable geometry.
+- Keep Journey content and pure chapter navigation in `src/components/journey`, separate from presentation, so chapter ordering can be tested without rendering.
+- Journey uses a CSS perspective notebook and a temporary turning leaf; commit chapter changes after the leaf finishes and clean up all navigation timers.
+- Define Journey visual styling in the global semantic design system so notebook pages and responsive layouts share stable geometry.

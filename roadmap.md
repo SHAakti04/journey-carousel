@@ -1,4 +1,4 @@
-# Journey carousel
-- [x] Adapt supplied chapters into the first-screen Journey design.
-- [x] Implement centered initial placement and continuous seamless looping.
-- [x] Verify animation and one-screen layout on desktop and mobile.
+# Journey notebook
+- [ ] Replace the carousel with a realistic animated notebook and eight chapter selectors.
+- [ ] Add page turns, staged reveals, automatic playback, and manual navigation.
+- [ ] Verify chapter navigation and screen fit on desktop and mobile.
